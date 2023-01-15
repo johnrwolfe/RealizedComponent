@@ -3,7 +3,7 @@ Connect a component realized in Java to one modeled in xtUML for execution in Br
 
 ## Prepare a Workspace
 1. Create an xtUML project named BuiltInEEs.
-2. Add a folder named EEs to the BuiltInEEs project.
+2. Add a package named EEs to the BuiltInEEs project.
 3. Select the EEs folder and select the context menu entry (right-click) for "Add Built-in External Entities".
 4. Import the RealizedComponentTest project from this repository into the workspace.
 
