@@ -33,9 +33,23 @@ called Device.  There is one Java interface for messages flowing from the modele
 to the realized Device component and one for messages flowing in the opposite direction.
 
 ## Build the Project
-To compile the realized Device component, fromw within Project Explorer, execute BuildProject 
-against the RealizedComponentTest project.  Ensure there are no errors by checking the 
-Problems view.
+The realized Device component must be compiled so that the Java class loader can 
+locate and load the resulting class file when a Verifier session is started.  The
+realized Device component depends on an external library that is part of the BridgePoint
+installation, so this library must first be added to the Java build path.
+
+### Add External Library to Java Build Path
+From within Project Explorer, select the RealizedComponentTest project and execute
+"Build Path > Configure Build Path..."
+
+Then, select the Libraries tab, poke the "Add External JARs" button, and navigate to the
+org.xtuml.bp.core_\<version\>/core.jar file within your BridgePoint installation.
+
+@@@ Image goes here @@@
+
+### Build
+From within Project Explorer, execute "Build Project" against the RealizedComponentTest project.  
+Ensure there are no errors by checking the Problems view.
 
 ## Execute Realized Component in Verifier
 1. Create a debug configuration using the System_realized configuration.
