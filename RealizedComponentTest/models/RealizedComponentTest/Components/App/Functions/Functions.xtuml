@@ -1,0 +1,95 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("1cffa0f6-3bc1-4462-946c-9cab8f4235e8",
+	"00000000-0000-0000-0000-000000000000",
+	"ae364b5f-04fe-41a1-b508-1ec843f9f24a",
+	'Functions',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("6736edbe-8891-4149-9e91-de091468f284",
+	112,
+	"1cffa0f6-3bc1-4462-946c-9cab8f4235e8",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'',
+	'RealizedComponentTest::Components::App::Functions');
+INSERT INTO DIM_DIA
+	VALUES ("6736edbe-8891-4149-9e91-de091468f284",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("b09e5a78-f022-4642-88f4-765a0a4bd7c6",
+	"00000000-0000-0000-0000-000000000000",
+	'Cleanup',
+	'',
+	'select many drs from instances of DeviceReport;
+for each dr in drs
+  delete object instance dr;
+end for;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0,
+	2);
+INSERT INTO PE_PE
+	VALUES ("b09e5a78-f022-4642-88f4-765a0a4bd7c6",
+	1,
+	"1cffa0f6-3bc1-4462-946c-9cab8f4235e8",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("6862cec3-91d9-4896-9cda-428c782a73c9",
+	"00000000-0000-0000-0000-000000000000",
+	'SendQuery',
+	'',
+	'send Device::Query();',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0,
+	4);
+INSERT INTO PE_PE
+	VALUES ("6862cec3-91d9-4896-9cda-428c782a73c9",
+	1,
+	"1cffa0f6-3bc1-4462-946c-9cab8f4235e8",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("1cffa0f6-3bc1-4462-946c-9cab8f4235e8",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"efdc83ed-209d-47fa-bf0d-76b6720dc0f1",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("efdc83ed-209d-47fa-bf0d-76b6720dc0f1",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'App',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'',
+	'../App.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("ae364b5f-04fe-41a1-b508-1ec843f9f24a",
+	'RealizedComponentTest',
+	1,
+	'../../../RealizedComponentTest.xtuml');

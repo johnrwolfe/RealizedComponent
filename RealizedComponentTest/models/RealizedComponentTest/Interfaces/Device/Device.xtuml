@@ -1,0 +1,56 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("5a4d7cf8-8b30-4f6a-9239-fba96c9b2731",
+	"00000000-0000-0000-0000-000000000000",
+	'Device',
+	'');
+INSERT INTO C_EP
+	VALUES ("eaf837d8-30a5-4b17-b438-d4f77cd807f8",
+	"5a4d7cf8-8b30-4f6a-9239-fba96c9b2731",
+	-1,
+	'Report',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("eaf837d8-30a5-4b17-b438-d4f77cd807f8",
+	'Report',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("fbcafbed-a34a-40e2-a9aa-35d6225f0f2d",
+	"eaf837d8-30a5-4b17-b438-d4f77cd807f8",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'message',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("f8f475bb-075e-4f03-bdfa-0bb660ce7039",
+	"5a4d7cf8-8b30-4f6a-9239-fba96c9b2731",
+	-1,
+	'Query',
+	'',
+	4);
+INSERT INTO C_AS
+	VALUES ("f8f475bb-075e-4f03-bdfa-0bb660ce7039",
+	'Query',
+	'',
+	1,
+	"eaf837d8-30a5-4b17-b438-d4f77cd807f8");
+INSERT INTO PE_PE
+	VALUES ("5a4d7cf8-8b30-4f6a-9239-fba96c9b2731",
+	1,
+	"8a8154e7-cd2f-44ee-92aa-42f1b3f28566",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("8a8154e7-cd2f-44ee-92aa-42f1b3f28566",
+	"ae364b5f-04fe-41a1-b508-1ec843f9f24a",
+	"ae364b5f-04fe-41a1-b508-1ec843f9f24a",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');

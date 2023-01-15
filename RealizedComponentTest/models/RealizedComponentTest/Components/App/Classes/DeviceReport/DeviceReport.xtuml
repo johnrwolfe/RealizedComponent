@@ -1,0 +1,68 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("ccd4de25-a951-4a9e-90e1-4015d413c4cd",
+	'DeviceReport',
+	1,
+	'DeviceReport',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("46f96352-f569-4aaa-9b33-cb97cdc8ab91",
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd");
+INSERT INTO O_BATTR
+	VALUES ("46f96352-f569-4aaa-9b33-cb97cdc8ab91",
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd");
+INSERT INTO O_ATTR
+	VALUES ("46f96352-f569-4aaa-9b33-cb97cdc8ab91",
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd",
+	"00000000-0000-0000-0000-000000000000",
+	'message',
+	'',
+	'',
+	'message',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("f662fdc1-57b3-4ef9-9d71-ed4eee3d6932",
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd");
+INSERT INTO O_BATTR
+	VALUES ("f662fdc1-57b3-4ef9-9d71-ed4eee3d6932",
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd");
+INSERT INTO O_ATTR
+	VALUES ("f662fdc1-57b3-4ef9-9d71-ed4eee3d6932",
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd",
+	"46f96352-f569-4aaa-9b33-cb97cdc8ab91",
+	'time',
+	'',
+	'',
+	'time',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd");
+INSERT INTO O_ID
+	VALUES (1,
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd");
+INSERT INTO O_ID
+	VALUES (2,
+	"ccd4de25-a951-4a9e-90e1-4015d413c4cd");
+INSERT INTO PE_PE
+	VALUES ("ccd4de25-a951-4a9e-90e1-4015d413c4cd",
+	1,
+	"87776066-9c52-4441-a4dd-c5b84121679e",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("87776066-9c52-4441-a4dd-c5b84121679e",
+	"00000000-0000-0000-0000-000000000000",
+	"ae364b5f-04fe-41a1-b508-1ec843f9f24a",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');
