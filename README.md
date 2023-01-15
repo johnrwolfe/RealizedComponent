@@ -45,7 +45,7 @@ From within Project Explorer, select the RealizedComponentTest project and execu
 Then, select the Libraries tab, poke the "Add External JARs" button, and navigate to the
 org.xtuml.bp.core_\<version\>/core.jar file within your BridgePoint installation.
 
-@@@ Image goes here @@@
+![Screen-scrape of Libraries tab in build path configuration](AddExternalJar.png)
 
 ### Build
 From within Project Explorer, execute "Build Project" against the RealizedComponentTest project.  
