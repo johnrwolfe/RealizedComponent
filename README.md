@@ -50,6 +50,8 @@ Then, do the following:
   - select core.jar in the list of JARs and class folders
   - poke the "Remove" button
 
+![Screen-scrape of Libraries tab in build path configuration](RemoveJar.png)
+
 ### Add External Library to Java Build Path
 From within Project Explorer, select the RealizedComponentTest project and execute
 "Build Path > Configure Build Path..."
