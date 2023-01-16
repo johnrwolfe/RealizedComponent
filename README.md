@@ -34,16 +34,30 @@ to the realized Device component and one for messages flowing in the opposite di
 
 ## Build the Project
 The realized Device component must be compiled so that the Java class loader can 
-locate and load the resulting class file when a Verifier session is started.  The
+locate and load the resulting class file when a Verifier session is started.  Since the
 realized Device component depends on an external library that is part of the BridgePoint
-installation, so this library must first be added to the Java build path.
+installation, this library must first be added to the Java build path.
+
+### Remove Existing core.jar from Java Build Path
+But, before adding the library from your BridgePoint installation, the existing one, if it
+exists, must be removed from the build path.
+
+From within Project Explorer, select the RealizedComponentTest project and execute
+"Build Path > Configure Build Path..."
+
+Then, do the following:
+  - select the Libraries tab
+  - select core.jar in the list of JARs and class folders
+  - poke the "Remove" button
 
 ### Add External Library to Java Build Path
 From within Project Explorer, select the RealizedComponentTest project and execute
 "Build Path > Configure Build Path..."
 
-Then, select the Libraries tab, poke the "Add External JARs" button, and navigate to the
-org.xtuml.bp.core_\<version\>/core.jar file within your BridgePoint installation.
+Then, do the following:
+  - select the Libraries tab
+  - poke the "Add External JARs" button
+  - navigate to the org.xtuml.bp.core_\<version\>/core.jar file within your BridgePoint installation
 
 ![Screen-scrape of Libraries tab in build path configuration](AddExternalJar.png)
 
@@ -53,7 +67,8 @@ Ensure there are no errors by checking the Problems view.
 
 ## Execute Realized Component in Verifier
 1. Create a debug configuration using the System_realized configuration.
-   - disable "Run deterministically"
+   - uncheck "Run deterministically"
+   - uncheck "Enable simulated time"
 2. Launch a Verifier session with this configuration.
 3. In Session Explorer
    - Expand App/Classes
