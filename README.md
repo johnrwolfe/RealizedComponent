@@ -63,6 +63,12 @@ Then, do the following:
 
 ![Screen-scrape of Libraries tab in build path configuration](AddExternalJar.png)
 
+Your build path view may be sub-divided into sections as shown in the image below.  If so,
+delete the core.jar library from the Modulepath, and then add the core.jar library for 
+your BridgePoint installation into the Modulepath.
+
+![Screen-scrape of Libraries tab in build path configuration](BuildPathModulepath.png)
+
 ### Build
 From within Project Explorer, execute "Build Project" against the RealizedComponentTest project.  
 Ensure there are no errors by checking the Problems view.
