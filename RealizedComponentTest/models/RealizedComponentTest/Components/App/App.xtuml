@@ -65,7 +65,7 @@ INSERT INTO GD_GE
 	"81377f47-3b4a-432d-bb8f-af3eb65a59ef",
 	94,
 	0,
-	'RealizedComponentTest::Components::App::Device::Device');
+	'RealizedComponentTest::Components::App::Device::Reporting');
 INSERT INTO GD_CON
 	VALUES ("884274b5-ee2e-45db-b9f6-136075ae5039",
 	"00000000-0000-0000-0000-000000000000");
@@ -228,10 +228,10 @@ INSERT INTO C_IR
 	"cdeaee4d-1cc9-4e1f-b171-d75c2c2be5a1");
 INSERT INTO C_P
 	VALUES ("81377f47-3b4a-432d-bb8f-af3eb65a59ef",
-	'Device',
+	'Reporting',
 	'Unnamed Interface',
 	'',
-	'App::Device::Device');
+	'App::Device::Reporting');
 INSERT INTO SPR_PEP
 	VALUES ("1fbd4455-dc4a-4da3-9b32-635bcabfd2e8",
 	"eaf837d8-30a5-4b17-b438-d4f77cd807f8",
@@ -253,7 +253,7 @@ INSERT INTO C_EP_PROXY
 	'Report',
 	'',
 	1,
-	'../../Interfaces/Device/Device.xtuml');
+	'../../Interfaces/Reporting/Reporting.xtuml');
 INSERT INTO SPR_PEP
 	VALUES ("7c503112-8f3b-489a-a8fe-ea43860f56eb",
 	"f8f475bb-075e-4f03-bdfa-0bb660ce7039",
@@ -273,13 +273,13 @@ INSERT INTO C_EP_PROXY
 	'Query',
 	'',
 	4,
-	'../../Interfaces/Device/Device.xtuml');
+	'../../Interfaces/Reporting/Reporting.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("5a4d7cf8-8b30-4f6a-9239-fba96c9b2731",
 	"00000000-0000-0000-0000-000000000000",
-	'Device',
+	'Reporting',
 	'',
-	'../../Interfaces/Device/Device.xtuml');
+	'../../Interfaces/Reporting/Reporting.xtuml');
 INSERT INTO PE_PE
 	VALUES ("efdc83ed-209d-47fa-bf0d-76b6720dc0f1",
 	1,

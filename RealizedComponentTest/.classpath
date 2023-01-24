@@ -6,10 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/BP-20221103/BridgePoint/plugins/org.xtuml.bp.core_7.3.0.202211031426/core.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="/opt/BridgePoint/plugins/org.xtuml.bp.core_7.3.0.202212162056/core.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
